@@ -1,69 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+        rel="stylesheet">
     <title>Grid Layout</title>
+    <link rel="stylesheet" href="grid.css">
 </head>
-<style>
-    *{
-        margin:0;
-        padding:0;
-    }
-    body{
-        background-color:rgb(6, 6, 35);
-        display: flex;
-        place-items: center;
-        min-height: 100vh;
-    }
-    
-    main{ 
-        display: grid;
-        grid-template-areas: 
-        'a a a b ' 
-        'a a a b '
-        'c c d d '
-        'c c e e ';
-        gap: 10px;
-        width: 50%;
-        margin:50px;
-    }
-    main div{
-        text-align: center;
-        padding:2em;
-    }
-    .main-container{
-        margin: 50px;
-    }
-    .orange{
-        background-color:#EB5020;
-        grid-area: a;
-    }
-    .yellow{
-        background-color:#FCA201;
-        grid-area: b;
-    }
-    .green{
-        background-color:#05AA42;
-        grid-area: c;
-    }
-    .small-blue{
-        background-color:#01AEFD;
-        grid-area: d;
-    }
-    .big-blue{
-         background-color:cornflowerblue;
-         grid-area: e;
-    }
-</style>
+
 <body>
-    <main>
-            <div class="orange"></div>
-            <div class="yellow"></div>
-            <div class="green"></div>
-            <div class="small-blue"></div>
-            <div class="big-blue"> </div>
+
+    <div class="link">
+        <a href="index.html">GO TO FLEX</a>
+    </div>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <div class="boxes">
+
+                    <div class="first-boxes">
+                        <div class="box red"></div>
+                        <div class="box yello"></div>
+                    </div>
+                    <div class="second-boxes">
+                        <div class="box green"></div>
+                        <div class="two-box">
+                            <div class="box blue"></div>
+                            <div class="box blue-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
+
 </html>
