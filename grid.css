@@ -4,11 +4,11 @@
   padding: 0;
   box-sizing: border-box;
   --height: 300px;
-  --red: linear-gradient(45deg, #e400c5, #aa003b);
-  --yello: linear-gradient(45deg, #ffc802, #a54d00);
-  --green: linear-gradient(45deg, #2cef00, #226b00);
-  --blue: linear-gradient(45deg, #00b3ff, #012f84);
-  --bg: #110423;
+  --pink: linear-gradient(45deg, #e400c5, #e400c5);
+  --yellow: linear-gradient(45deg, #ffc802, #ffc802);
+  --green: linear-gradient(45deg, #2cef00, #2cef00);
+  --blue: linear-gradient(45deg, #00b3ff, #00b3ff);
+  --bg: #170334;
   --trans: 400ms;
 }
 
@@ -29,7 +29,7 @@ main {
 .link a {
   padding: 15px 25px;
   text-decoration: none;
-  border: unset;
+  border: 1px solid white;
   border-radius: 15px;
   color: #ffffff;
   z-index: 1;
@@ -38,8 +38,6 @@ main {
   letter-spacing: 2px;
   padding: 0.5rem 1rem;
   font-family: "Big Shoulders Display";
-  box-shadow: 4px 8px 19px -3px rgba(171, 106, 106, 0.27);
-  transition: all 250ms;
   overflow: hidden;
 }
 
@@ -69,14 +67,15 @@ main {
   background: var(--bg);
   display: grid;
   place-items: center;
+  
 }
 
 .main .container {
-  width: 100%;
+  width: 50%;
 }
 
 .main .container .content {
-  margin: 3rem;
+  margin: 1rem;
 }
 
 .main .container .content .boxes {
@@ -92,12 +91,12 @@ main {
 }
 
 .main .container .content .boxes .first-boxes .red {
-  background: var(--red);
+  background: var(--pink);
   grid-area: a;
 }
 
 .main .container .content .boxes .first-boxes .yello {
-  background: var(--yello);
+  background: var(--yellow);
   grid-area: b;
 }
 
@@ -126,7 +125,7 @@ main {
 .main .container .content .boxes .second-boxes .blue-2 {
   background: var(--blue);
   grid-area: e;
-  height: 180px;
+  height: 185px;
   margin-top: 15px;
 }
 
@@ -137,7 +136,7 @@ main {
 .main {
   width: 100%;
   transition: var(--trans);
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 

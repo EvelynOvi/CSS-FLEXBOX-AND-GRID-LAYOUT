@@ -251,7 +251,7 @@ body {
 .main {
   width: 100%;
   transition: var(--trans);
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
